@@ -1,0 +1,33 @@
+<div id="chatbot">
+     <div class="chatbot chatbot--js chatbot-textfield-' + _this.enabled.textInput + '">
+         <section class="chatbot-header" role="banner">
+             <h3 class="chatbot-header--avatar">{{title}}</h3> 
+             <button class="chatbot-header--close chatbot-quit-link--js" aria-expanded="true" aria-controls="chatbot-wrapper"> {{closeText}} </button>
+        </section>
+        <section class="chatbot-main chatbot-main--js" role="main" id="main">
+            <div class="chatbot-window chatbot-window--js">
+                <div class="chatbot-speech-loader chatbot-speech-loader--js">
+                    <p>                          
+                        <span class="bubblingG">
+                            <span id="bubblingG_1"></span>
+                            <span id="bubblingG_2"></span>
+                            <span id="bubblingG_3"></span>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="helper-buttons-section" class="chatbot-startover-options">
+            <form target="_blank"> 
+                <button formaction="https://www.timaru.govt.nz/tim-the-chatbot-help" class="chatbot-header--help"> 
+                    Help 
+                </button>
+            </form>
+        </section>
+        <section class="chatbot-footer" role="contentinfo">
+            <form class="chatbot-ask-form chatbot-ask-form--js" method="get" action="/">
+                <input class="chatbot-input chatbot-input--js" type="text" placeholder="{{inputText}}" maxlength="250" />
+            </form>               
+        </section>
+    </div>
+</div>
